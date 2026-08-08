@@ -1,9 +1,11 @@
-import "./App.css"
-import { Editor } from "@monaco-editor/react"
-import { MonacoBinding } from "y-monaco"
-import { useRef, useMemo, useState, useEffect } from "react"
-import * as Y from "yjs"
-import { SocketIOProvider } from "y-socket.io"
+import "./App.css";
+import { Editor } from "@monaco-editor/react";
+import { MonacoBinding } from "y-monaco";
+import { useRef, useMemo, useState, useEffect } from "react";
+import * as Y from "yjs";
+import { SocketIOProvider } from "y-socket.io";
+
+
 
 function App() {
 
@@ -76,7 +78,8 @@ function App() {
       }
     }
   }, [
-    username
+    username,
+    ydoc
   ])
 
   if (!username) {
